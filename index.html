@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SamLearn Institute</title>
+  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      background-color: #f0f8ff;
+    }
+    .header {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+    .nav-links li {
+      margin-left: 20px;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: url("/images/banner.jpg");
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    .hero-content h1 {
+      font-size: 3rem;
+    }
+    .presentation {
+      text-align: center;
+      padding: 4rem 2rem;
+      background-color: #e6f7ff;
+    }
+    .presentation span {
+      color: #007acc;
+      font-weight: bold;
+    }
+    .services {
+      padding: 4rem 2rem;
+      background-color: #f0f8ff;
+    }
+    .service-items {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .service {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .feedback {
+      background-color: #e6f7ff;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .client-feedbacks {
+      display: flex;
+      justify-content: space-around;
+    }
+    .feedback-item {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      width: 30%;
+    }
+    .stats {
+      background-color: #f0f8ff;
+      padding: 4rem 2rem;
+      display: flex;
+      justify-content: space-around;
+    }
+    .stat {
+      text-align: center;
+      font-size: 2rem;
+    }
+    .bannerSection {
+      background: url("./images/image-team.jpg");
+    }
+    .contact {
+      padding: 4rem 2rem;
+      background-color: #e6f7ff;
+    }
+    .contact-form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: grid;
+      grid-gap: 1rem;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .contact-form button {
+      background-color: #007acc;
+      color: white;
+      border: none;
+      padding: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .map iframe {
+      width: 100%;
+      border: 0;
+    }
+    .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./images/logo.png" alt="">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#services">Nos services</a></li>
+        <li><a href="#feedback">Feedbacks</a></li>
+        <li><a href="#contact">Contactez-nous</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div>
+      <img src="./images/flat_1.png" alt="">
+    </div>
+    <div class="hero-content">
+      <h1>SamLearn Institute<br>Coach Anglais personnalisé</h1>
+      <p>Améliorez votre anglais professionnel avec nos formations personnalisées.</p>
+    </div>
+  </section>
+
+  <!-- Presentation Section -->
+  <section class="presentation">
+    <div>
+      <img src="./images/flat_2.png" alt="">
+    </div>
+    <h2>Je suis <span>SamLearn</span></h2>
+    <p>Une offre adaptée à vos besoins linguistiques.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div>
+      <img src="./images/flat_3.png" alt="">
+    </div>
+    <h2>Nos services</h2>
+    <div class="service-items">
+      <div class="service">
+        <h3>Service Title</h3>
+        <p>Description courte du service proposé.</p>
+      </div>
+      <div class="service">
+        <h3>Service Title</h3>
+        <p>Description courte du service proposé.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feedback Section -->
+  <section id="feedback" class="feedback">
+    <h2>Feedbacks</h2>
+    <div class="client-feedbacks">
+      <div class="feedback-item">
+        <h3>Client 1</h3>
+        <p>Profession Client 1</p>
+        <p>Feedback du client</p>
+      </div>
+      <div class="feedback-item">
+        <h3>Client 2</h3>
+        <p>Profession Client 2</p>
+        <p>Feedback du client</p>
+      </div>
+      <div class="feedback-item">
+        <h3>Client 3</h3>
+        <p>Profession Client 3</p>
+        <p>Feedback du client</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div>
+      <img src="./images/flat_4.png" alt="">
+    </div>
+    <div class="stat">
+      <h3>000</h3>
+      <p>Good Stat</p>
+    </div>
+    <div class="stat">
+      <h3>000</h3>
+      <p>Good Stat</p>
+    </div>
+    <div class="stat">
+      <h3>000</h3>
+      <p>Good Stat</p>
+    </div>
+  </section>
+
+  <section className="bannerSection">
+    <div className="bannerSection__text">
+      <h2 className="bannerSection__text__title">Lançez-vous !</h2>
+      <p className="bannerSection__text__paragraph">Nous sommes prêt à vous recevoir et vous aider à maitriser l'anglais et à accéder à des opportunités internationales</p>
+
+      <div>
+        <a href="#">S'inscrire</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contactez-nous</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Prénom" required>
+      <input type="text" placeholder="Nom" required>
+      <input type="email" placeholder="Adresse mail" required>
+      <textarea placeholder="Votre message..." required></textarea>
+      <button type="submit">Envoyer un message</button>
+    </form>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 SamLearn Institute. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
